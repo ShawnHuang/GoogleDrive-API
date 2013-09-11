@@ -1,0 +1,195 @@
+<!--
+-->
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">-->
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+  <!--This one seems to work all the time, but really small on ipad-->
+  <!--<meta name="viewport" content="initial-scale=0.4">-->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="stylesheet" media="all" href="styles/5e0ea321.default.css">
+  <link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="styles/5e0ea321.phone.css">
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->
+  <script src="bower_components/jquery/jquery.js" type="text/javascript" charset="utf-9"></script>
+  <script data-main="scripts/slides" src="scripts/require-1.0.8.min.js"></script>
+</head>
+<body style="opacity: 0">
+<slides class="layout-widescreen">
+  <slide class="title-slide segue nobackground">
+    <aside class="gdbar">
+      <img src="images/c6f44138.google-drive-logo-128.png" alt="">
+    </aside>
+    <!-- The content of this hgroup is replaced programmatically through the slide_config.json. -->
+    <hgroup class="">
+      <h1 data-config-title=""><!-- populated from slide_config.json --></h1>
+      <h2 data-config-subtitle=""><!-- populated from slide_config.json --></h2>
+      <p data-config-presenter=""><!-- populated from slide_config.json --></p>
+    </hgroup>
+  </slide>
+  <slide class="segue dark quote nobackground">
+    <aside class="gdbar centered"><h1>Part 1</h1></aside>
+    <article class="flexbox vleft">
+      <q>
+        Register Your Application
+      </q>
+    </article>
+  </slide>
+  <slide class="">
+    <article class="flexbox left">
+      <p class="smaller">
+        visit the <a href="https://code.google.com/apis/console/?api=drive" target="_blank">Google apis console</a>,click "Create project"<br>
+        <br>
+        <img src="images/steps/3f97db58.01.png" alt="">
+      </p>
+    </article>
+  </slide>
+  <slide class="">
+    <article class="flexbox left">
+      <p class="smaller">
+        Activate the Drive API and Drive SDK<br>
+        <br>
+        <img src="images/steps/82c6f351.02.png" alt="">
+      </p>
+    </article>
+  </slide>
+  <slide class="">
+    <article>
+      <p class="smaller">
+        <br><br>
+        <img src="images/steps/fcd62d3a.03.png" alt="">
+      </p>
+    </article>
+  </slide>
+  <slide class="">
+    <article class="flexbox left">
+      <p class="smaller">
+        Create an OAuth 2.0 Client ID<br>
+        <br>
+        <img src="images/steps/612e584e.04.png" alt="">
+      </p>
+    </article>
+  </slide>
+  <slide class="">
+    <article class="flexbox left">
+      <p class="smaller">
+        Input product name<br>
+        <br>
+        <img src="images/steps/28062504.05.png" alt="">
+      </p>
+    </article>
+  </slide>
+  <slide class="">
+    <article class="flexbox left">
+      <p class="smaller">
+        Select application type<br>
+        <br>
+        <img src="images/steps/8aeb8dc7.06.png" alt="">
+      </p>
+    </article>
+  </slide>
+  <slide class="">
+    <article class="flexbox left">
+      <p class="smaller">
+        Download JSON<br>
+        <br>
+        <img src="images/steps/92f0e176.07.png" alt="">
+      </p>
+    </article>
+  </slide>
+  <slide class="segue quote dark nobackground">
+    <aside class="gdbar centered"><h1>Part 2</h1></aside>
+    <article class="flexbox vleft">
+      <q>
+        Checkout Instructions
+      </q>
+      <div class="author">
+      </div>
+    </article>
+  </slide>
+  <slide class="">
+    <section>
+      <p>Clone the project from remote</p>
+    </section>
+    <pre class="prettyprint" data-lang="shell">
+      $ cd [someDirectory]
+
+      $ hg clone https://code.google.com/p/google-api-java-client.samples/ 
+        google-api-java-client-samples
+
+      $ cd google-api-java-client-samples/drive-cmdline-sample
+
+      $ cp ~/Downloads/client_secrets.json src/main/resources/client_secrets.json
+    </pre>
+  </slide>
+  <slide class="">
+    <article class="flexbox left">
+      <p class="smaller">
+        Init variables in DriveSample.java<br>
+        <br>
+        <img src="images/steps/5c184197.10.png" alt="">
+      </p>
+    </article>
+  </slide>
+  <slide class="">
+    <section>
+      <p>Compile and Run</p>
+    </section>
+    <pre class="prettyprint" data-lang="shell">
+      $ mvn compile
+      $ mvn -q exec:java
+    </pre>
+  </slide>
+  <slide class="">
+    <article class="flexbox left">
+      <p class="smaller">
+        Input Usrname and Passwd<br>
+        <br>
+        <img src="images/steps/9ec2cc32.08.png" alt="">
+      </p>
+    </article>
+  </slide>
+  <slide class="">
+    <article class="flexbox left">
+      <p class="smaller">
+        Apply the request<br>
+        <br>
+        <img src="images/steps/910cd931.09.png" alt="">
+      </p>
+    </article>
+  </slide>
+  <slide class="quote dark">
+    <section class="flexbox vleft">
+      if there is no errors displayed, <br>
+        and you will see a file named "drivetest-XXX" in the local dictory.
+    </section>
+  </slide>
+  <slide class="thank-you-slide segue nobackground">
+      <article class="flexbox vleft auto-fadein">
+        <h2>&lt;Thank you for your watch!&gt;</h2>
+      </article>
+  </slide>
+  <slide class="backdrop"></slide>
+</slides>
+
+<script>
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-XXXXXXXX-1']);
+_gaq.push(['_trackPageview']);
+
+(functio() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+
+<!--[if IE]>
+  <script src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js"></script>
+  <script>CFInstall.check({mode: 'overlay'});</script>
+<![endif]-->
+</body>
+</html>
